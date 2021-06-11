@@ -14,7 +14,7 @@ public class Demo {
 //			System.out.println(str1[i]);
 //		}
 //		}
-		
+	//code to check pallindrome string	
 	  String str2="malayalam";
 	  int i=0;
 	  int j=str2.length()-1;
@@ -23,6 +23,9 @@ public class Demo {
 		  if(str2.charAt(i)==str2.charAt(j)) {
 			  i++;
 			  j--;
+		  }
+		  else{
+			  System.out.println("not pallindrome");
 		  }
 		    
 	  }
