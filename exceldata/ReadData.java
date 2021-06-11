@@ -13,7 +13,6 @@ public class ReadData {
 	public static void main(String[] args) {
 		String path="C:\\Users\\Pooja Gupta\\Downloads\\Products (4) - Sheet1.csv";
 		String line="";
-		String pname;
 		int st=0,dt=0,vt=0;
 		int srec=0,drec=0,vrec=0;
 		Map<Integer,MobilePlan> map=new HashMap<>();
@@ -47,39 +46,11 @@ public class ReadData {
 			    	map.put(1,new MobilePlan(values[0],values[1],vt,vrec));
 			    	
 			    }
-			    
-			    
-			  
-			    
-			    
-//			  HashMap<Integer,MobilePlan> map=new HashMap<>();
-//			  map.put(1, new MobilePlan(values[0],values[1],values[2],values[3]));
-////			  
-//////				String sArray=values[0];
-//////				String dArray=values[2];
-//////				String vArray=values[3];
-////////				System.out.println(" "+values[1]+" ");
-//////				ArrayList arr=new ArrayList<>();
-//////				
-//////				arr.add(sArray);
-//////				arr.add(dArray);
-//////				arr.add(vArray);
-////////				System.out.println(arr);
-//		  for(Map.Entry<Integer, MobilePlan> entry:map.entrySet()) {
-//			  System.out.println(entry.getValue().getProduct_name());
-//				  System.out.println(entry.getValue().getOnetime_fee());
-//				  System.out.println(entry.getValue().getRecurring_Fee());
-//				 
-//				  
-//				  
-//			  }
-//			    
-//				
-//			
+			    			
 				}
 			System.out.println("enter the key");
 			for(Map.Entry<Integer, MobilePlan> entry:map.entrySet()) {
-//				  
+				  
 				if(entry.getKey()==sc.nextInt());	 
 					
 				System.out.println(entry.getValue().getProduct_name()+" OT-"+entry.getValue().getOnetime_fee()+" RecFee-"+entry.getValue().getRecurring_Fee());
